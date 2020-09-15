@@ -1,0 +1,21 @@
+Dataset Description
+
+Attached here you will ﬁnd the Abnormal IP detection.csv ﬁle. The dataset contains data captured over one day from a real-world network. Each example represents a set of 8 features of a unique IP, while the last column indicates if the activity of the speciﬁc IP is normal “Secure” or anomaly “Attack”. The description of each feature is given below:
+
+1. requests: the number of requests sent by per IP.
+
+2. request-interval: the average time interval between consecutive requests sent by per IP. Unit: milliseconds.
+
+3. request-popularity: what percentage of the requests sent by per IP are for popular contents.
+
+4. bytes: the average bytes received by per IP.
+
+5. delivery-time: the average request delivery time experienced by per IP. Unit: milliseconds.
+
+6. hit-rate: cache hit rate of per IP.
+
+7. nodes: the number of nodes that received requests from per IP.
+
+8. contents: the number of contents requested per IP.
+
+9. label: 0-normal, 1-abnormal

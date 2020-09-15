@@ -1,0 +1,46 @@
+Exploratory Analysis
+ 
+• Question 1) Indicate the ratio of the normal and anomaly examples in the dataset. Make a bar chart to visualize the ratios 
+
+• Question 2) Plot the probability density function (PDF) of each feature, and make your observations of the pdf of each feature (i.e., normal distribution, left-skewed distribution, right-skewed distribution, ...) 
+
+• Question 3) Find the correlation between the features. Indicate the highly correlated features and the independent features 
+
+
+Data Processing 
+
+• Question 4) Apply any signiﬁcance test to rank the signiﬁcance of each feature as being a distinctive feature of anomalies 
+
+• Question 5) Apply a suitable transformation to make better suit the Gaussian shape. Plot the normal probability plot and the pdf of each feature before and after the transformation. Also, indicate the formula that is used to transform each feature (i.e., yi = log(xi))  
+
+• Question 6) Split the data randomly into 70 training and 30 testing datasets. Make sure that the training dataset contains 70 of the total anomalies and the testing dataset contains 30 of the total anomalies. Indicate the ratio of the normal and anomaly examples for both datasets.
+
+
+Building A Gaussian-Based Anomaly Detection Algorithm 
+
+• Question 7) - Model the features in the training dataset (all features, columns A, B, ..., H) using the multivariate Gaussian distribution. Please write down the expression of the multivariate Gaussian distribution and show the mean vector and the connivance matrix. 
+
+• Question 8) Develop an anomaly alarm by adjusting a threshold  to your Gaussian models obtained in Questions 7, and accordingly, generate the anomaly alarm. Evaluate its performance using relative metrics (use the label column as a benchmark for the true anomalies).
+
+• Question 9) Plot the generated alarm, true anomaly labels (given in label column from the dataset), and the feature of the most important feature obtained from the ranking test in Question 4. 
+
+
+Supervised and Unsupervised Algorithms For Anomaly Detection 
+
+• Question 10) Apply one supervised learning approach, using all features (columns A, B, ..., H), for classifying the events to normal and anomalies. Use relative performance metrics to evaluate its performance.
+
+• Question 11) Apply any clustering based algorithm, using all features (columns A, B, ..., H), to separate the anomaly data from the normal ones. 
+
+
+Bonus Questions 
+
+• Question 12) Compare the Gaussian-based anomaly detection algorithm, the supervised learning approach you picked, and the clustering approach in terms of:
+– Detection capabilities.
+– Time complexity (in seconds) and memory requirements (in bytes) during the training phase.
+– Time complexity (in seconds) and memory requirements (in bytes) during the execution phase.
+• Use bar charts to visualize the comparison, and discuss the advantages\disadvantages of each approach. 
+
+• Question 13) Optimize the parameter  from Question 8 to maximize the detection rate and minimizing the false alarm rate (multi-objective optimization). 
+Particularly, consider the following objectives “jointly”:
+– Objective 1: Minimize the number of generated false alarms.
+– Objective 2: Maximize the number true anomalies discovered.
